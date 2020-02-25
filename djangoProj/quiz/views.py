@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.shortcuts import render, get_list_or_404
 from django.http import HttpResponse
 from django.template import loader
@@ -22,3 +23,8 @@ def detail(request, quiz_id):
     context = {'questions': questions, 'quiz': Quiz.objects.get(id=quiz_id) }
     return render(request, "quiz/detail.html", context)
     # return render(request, 'quiz/detail.html', {'question': questions})
+=======
+from django.shortcuts import render
+
+# Create your views here.
+>>>>>>> 3a52be4fb20e7efe9ca22bad3b72580e849bd19b
